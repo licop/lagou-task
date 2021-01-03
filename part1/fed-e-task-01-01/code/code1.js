@@ -41,3 +41,24 @@ timer('hello ', 10)
   .then(value => timer(`${value}I❤U`, 10))
   .then(console.log)
 
+// async await
+function sleep(duration) {
+  return new Promise(function(resolve) {
+      setTimeout(resolve, duration)
+  })
+} 
+
+async function consoleText() {
+  await sleep(100);
+    let a = 'hello ';
+  await sleep(100);
+    let b = 'lagou ';
+  await sleep(100)
+    let c = 'I❤U'
+    console.log(a + b + c, 58)
+
+}
+consoleText()
+
+
+

@@ -29,7 +29,7 @@ new Promise(resolve => {
   }, 10);
 })
 
-// 封装timer函数
+// 使用promise
 function timer(str, duration) {
   return new Promise(function(resolve) {
      setTimeout(() => resolve(str), duration);
@@ -41,7 +41,8 @@ timer('hello ', 10)
   .then(value => timer(`${value}I❤U`, 10))
   .then(console.log)
 
-// async await
+
+// 使用async await
 function sleep(duration) {
   return new Promise(function(resolve) {
       setTimeout(resolve, duration)
@@ -49,16 +50,12 @@ function sleep(duration) {
 } 
 
 async function consoleText() {
-  await sleep(100);
+  await sleep(10);
     let a = 'hello ';
-  await sleep(100);
+  await sleep(10);
     let b = 'lagou ';
-  await sleep(100)
+  await sleep(10)
     let c = 'I❤U'
-    console.log(a + b + c, 58)
-
+    console.log(a + b + c)
 }
-consoleText()
-
-
-
+consoleText();

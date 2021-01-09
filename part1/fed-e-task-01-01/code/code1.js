@@ -13,6 +13,19 @@
   }, 10)
 */
 // 直接输出
+
+let ta = setTimeout(function () {
+  var a = 'hello'
+  setTimeout(function () {
+    var b = 'lagou'
+    setTimeout(function () {
+      clearTimeout(ta)
+      var c = 'I ♥ U'
+      console.log(a + b +c)
+    }, 10)
+  }, 10)
+}, 10)
+
 new Promise(resolve => {
   setTimeout(() => {
     resolve('hello ')

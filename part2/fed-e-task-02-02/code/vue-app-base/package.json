@@ -1,35 +1,51 @@
 {
-  "name": "vue-app-base",
-  "version": "0.1.0",
-  "private": true,
+  "name": "lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "sideEffects": false,
   "scripts": {
-    "serve": "echo \"请使用 Webpack Dev Server 实现此任务\"",
-    "build": "echo \"请使用 Webpack 实现此任务\"",
-    "lint": "echo \"请使用 ESLint 实现此任务\""
+    "serve": "webpack-dev-server --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js",
+    "lint": "eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "@babel/runtime-corejs2": "^7.2.0",
+    "@vue/cli-plugin-babel": "^4.5.10",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^1.0.1",
+    "eslint": "^7.17.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^4.1.0",
+    "less-loader": "^7.2.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^4.2.3",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.5"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
-  },
-  "devDependencies": {
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  }
 }

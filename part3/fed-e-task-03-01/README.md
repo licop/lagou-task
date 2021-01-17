@@ -20,7 +20,7 @@ let vm = new Vue({
 
 答:
 
-不是响应式的，Vue 使用`Object.defineProperty` 把传入的 data 遍历 property 全部转为 `getter/setter`, 以此实现响应式，这一过程在**初始化**实例的时候就执行好了，后来添加的时候不会进行数据拦截来监听属性的的变化。
+不是响应式的，Vue 使用`Object.defineProperty` 把传入的 data 遍历 property 全部转为 `getter/setter`, 以此实现响应式，这一过程在**初始化**实例的时候就执行好了，后来添加的属性不会进行数据拦截来监听属性的的变化。
 
 ```
 // 正确更改
@@ -52,7 +52,11 @@ let vm = new Vue({
 
 ### 2、在模拟 Vue.js 响应式源码的基础上实现 v-html 指令，以及 v-on 指令。
 
-参考 code/Vue 目录下代码，[Vue 实现代码](https://github.com/licop/What_is_FE/blob/master/examples/vue-router/06-my-vue-router/src/vuerouter/index.js)
+参考 code/Vue 目录下代码，[Vue 实现代码](https://github.com/licop/lagou-task/tree/master/part3/fed-e-task-03-01/code/Vue)
+
+添加 `methods` 选项功能实现，使其内部函数调用 this 绑定到 Vue 实例，可获取实例的属性和方法。
+
+`v-on`实现调用`methods`里方法的功能，并且支持传递参数
 
 ### 3、参考 Snabbdom 提供的电影列表的示例，利用 Snabbdom 实现类似的效果，如图：
 

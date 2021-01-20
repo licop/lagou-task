@@ -82,3 +82,6 @@ Diff 算法对比两个 VNode 的子节点，用来查找两个节点树节点�
 ### 3、参考 Snabbdom 提供的电影列表的示例，利用 Snabbdom 实现类似的效果，如图：
 
 <img src="images/Ciqc1F7zUZ-AWP5NAAN0Z_t_hDY449.png" alt="Ciqc1F7zUZ-AWP5NAAN0Z_t_hDY449" style="zoom:50%;" />
+
+- [snabbdom 作业](https://github.com/licop/lagou-task/tree/master/part3/fed-e-task-03-01/code/snabbdom-learn)
+- [snabbdom 源码解析注释](https://github.com/licop/lagou-task/blob/master/part3/fed-e-task-03-01/code/snabbdom-learn/snabbdom/src/package/init.ts)

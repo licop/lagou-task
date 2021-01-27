@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const commonConfig = require('./webpack.common.js');
-const { appPublic, appDist } = require('./paths')
+const { appDist } = require('./paths')
 
 const devConfig = {
 	mode: 'development',

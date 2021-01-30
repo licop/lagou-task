@@ -1,8 +1,13 @@
 # 编程题
 
-#### 使用 NuxtJS 实现 RealWorld 全部功能
+## 完善 my-vuex
 
-#### DEMO地址   https://demo.realworld.io/#/
+- 原有 my-vuex 的 getters 方法没有实现缓存功能，非依赖的属性改变，也会重新计算，参照 vuex 源码通过 vue 实例 的 computed 实现
+- 挂载到原型方法上，使其每个实例都有 store 对象，不合理: 会对 Vue 实例造成污染, 应该挂载到根实例上。然后让其子组件也依次挂载 store
+
+## 使用 NuxtJS 实现 RealWorld 全部功能
+
+#### DEMO 地址 https://demo.realworld.io/#/
 
 **要求**
 
@@ -11,25 +16,17 @@
 - 本作业需要 放在 **github** 个人仓库, 并且**实现自动化部署**
 - 作业提交 「仓库代码地址」，在 README.md 中 输出「部署成功的服务器地址」
 
-　
-
 **说明**
 
-作业所需服务器, 可以到下面地址购买,  0.1元使用3个月 (需要拉勾学员电话号码注册)
+作业所需服务器, 可以到下面地址购买, 0.1 元使用 3 个月 (需要拉勾学员电话号码注册)
 
- https://www.ucloud.cn/site/active/lagou.html
-
-
-
-
+https://www.ucloud.cn/site/active/lagou.html
 
 #### 可能出现问题 ( 建议提前做好 )
 
-**服务器端口访问设置:  界面设置 + 服务器防火墙服务设置**
+**服务器端口访问设置: 界面设置 + 服务器防火墙服务设置**
 
-参考:  https://juejin.cn/post/6904234342575407111#heading-0
-
-　
+参考: https://juejin.cn/post/6904234342575407111#heading-0
 
 **服务器上安装 nvm 和 node**
 
@@ -50,20 +47,18 @@ nvm install --lts
 npm i pm2 -g
 ```
 
-pm2  list         查看应用列表
+pm2 list 查看应用列表
 
-pm2  start      启动应用
+pm2 start 启动应用
 
-pm2  stop      停止应用
+pm2 stop 停止应用
 
-pm2  reload   重载应用
+pm2 reload 重载应用
 
-pm2  restart   重启应用
+pm2 restart 重启应用
 
-pm2  delete    删除应用
+pm2 delete 删除应用
 
-pm2  log   xx   查看出错日志    xx为应用名称
+pm2 log xx 查看出错日志 xx 为应用名称
 
 **找不到 npm、pm2**
-
-　

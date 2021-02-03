@@ -5,7 +5,11 @@
 - 原有 my-vuex 的 getters 方法没有实现缓存功能，非依赖的属性改变，也会重新计算，参照 vuex 源码通过 vue 实例 的 computed 实现
 - 挂载到原型方法上，使其每个实例都有 store 对象，不合理: 会对 Vue 实例造成污染, 应该挂载到根实例上。然后让其子组件也依次挂载 store
 
+[my-vuex 完善](https://github.com/licop/lagou-task/blob/master/part3/fed-e-task-03-03/code/my-vuex/src/myvuex/index.js)
+
 ## 使用 NuxtJS 实现 RealWorld 全部功能
+
+作业地址： https://realworld.licop.cn/
 
 #### DEMO 地址 https://demo.realworld.io/#/
 

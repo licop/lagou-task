@@ -7,3 +7,6 @@
 \- 项目地址 https://github-laziji.github.io/#/user/new/main
 
 ![CgqCHl8575iAbsF4AAH_5qlinHg640](images/CgqCHl8575iAbsF4AAH_5qlinHg640.png)
+
+- [gridsome-blog](https://github.com/licop/gridsome-blog)
+- [vue-ssr](https://github.com/licop/vue-ssr)

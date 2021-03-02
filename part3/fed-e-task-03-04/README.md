@@ -10,3 +10,7 @@
 
 - [gridsome-blog](https://github.com/licop/gridsome-blog)
 - [vue-ssr](https://github.com/licop/vue-ssr)
+
+## 作业地址
+
+https://gridsome-blog.licop.cn/

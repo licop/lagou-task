@@ -1,5 +1,11 @@
 ## 作业
 
+## 作业地址
+
+http://39.107.225.18:8003/ 首次打开可能会慢一点
+
+### 作业要求
+
 1.完成视频中老师提出的作业要求
 
 2.100% 还原视频中所讲到的内容
@@ -24,8 +30,6 @@ http://edufront.lagou.com/front/doc.html#/home
 http://eduboss.lagou.com/boss/doc.html#/home
 ```
 
-
-
 **原型图 地址**
 
 eduboss.lagou.com
@@ -35,8 +39,6 @@ eduboss.lagou.com
 [http://eduboss.lagou.com](http://eduboss.lagou.com/)
 
 用户名：15510792995 密码：111111
-
-
 
 **硬性要求**
 
